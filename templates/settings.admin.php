@@ -39,14 +39,14 @@ Util::addScript(Application::APP_NAME, 'admin');
 ?>
 
 <div id="files_ocr-tesseract" class="section">
-	<h2><?php p($l->t('Files - Tesseract OCR')) ?></h2>
+        <h2><?php p($l->t('Files - Tesseract OCR')) ?></h2>
 
 	<div class="div-table">
 		<div class="div-table-row">
 			<div class="div-table-col div-table-col-left">
-				<span class="leftcol">Enable OCR:</span>
+				<span class="leftcol"><?php p($l->t('Enable OCR')); ?>:</span>
 				<br/>
-				<em>OCR your document with <i>Tesseract</i>.</em>
+				<em><?php p($l->t('OCR your document with')); ?> <i>Tesseract</i>.</em>
 			</div>
 			<div class="div-table-col">
 				<input type="checkbox" id="tesseract_ocr" value="1"/>
@@ -55,10 +55,9 @@ Util::addScript(Application::APP_NAME, 'admin');
 
 		<div class="div-table-row tesseract_ocr_enabled">
 			<div class="div-table-col div-table-col-left">
-				<span class="leftcol">Page Segmentation Method</span>
+				<span class="leftcol"><?php p($l->t('Page Segmentation Method')); ?>:</span>
 				<br/>
-				<em><a href="https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality#page-segmentation-method">link
-						to Tesseract documentation</a></em>
+				<em><a href="https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality#page-segmentation-method"><?php p($l->t('link to Tesseract documentation')); ?></a></em>
 			</div>
 			<div class="div-table-col">
 				<input type="text" class="small" id="tesseract_psm" value=""/>
@@ -67,9 +66,9 @@ Util::addScript(Application::APP_NAME, 'admin');
 
 		<div class="div-table-row tesseract_ocr_enabled">
 			<div class="div-table-col div-table-col-left">
-				<span class="leftcol">Languages</span>
+				<span class="leftcol"><?php p($l->t('Languages')); ?>:</span>
 				<br/>
-				<em>list of installed language, separated by <b>,</b> (comma)</em>
+				<em><?php p($l->t('list of installed language separated by comma')); ?></em>
 			</div>
 			<div class="div-table-col">
 				<input type="text" class="big" id="tesseract_lang" value=""/>
@@ -78,9 +77,9 @@ Util::addScript(Application::APP_NAME, 'admin');
 
 		<div class="div-table-row tesseract_ocr_enabled">
 			<div class="div-table-col div-table-col-left">
-				<span class="leftcol">PDF</span>
+				<span class="leftcol"><?php p($l->t('Process PDF')); ?>:</span>
 				<br/>
-				<em>enable the OCR of PDF (heavy on resource)</em>
+				<em><?php p($l->t('enable the OCR of PDF (heavy on resource)')); ?></em>
 			</div>
 			<div class="div-table-col">
 				<input type="checkbox" id="tesseract_pdf" value="1"/>
@@ -89,9 +88,9 @@ Util::addScript(Application::APP_NAME, 'admin');
 
 		<div class="div-table-row tesseract_ocr_enabled">
 			<div class="div-table-col div-table-col-left">
-				<span class="leftcol">Limit PDF pages</span>
+				<span class="leftcol"><?php p($l->t('Limit PDF pages')); ?>:</span>
 				<br/>
-				<em>limit the OCR of PDF to the first <i>n</i> pages</em>
+				<em><?php p($l->t('limit the OCR of PDF to the first n pages')); ?></em>
 			</div>
 			<div class="div-table-col">
 				<input type="text" class="big" id="tesseract_pdf_limit" value=""/>
